@@ -441,7 +441,7 @@ object-fit: cover;
 .subscribe {
    background:  linear-gradient(to bottom, black 0%, transparent 100%), url(img/subscribe.jpg) center no-repeat;
    background-attachment: fixed;
-   height: 80vh;
+   height: 800px;
    background-size: cover;
    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
    display: flex;
