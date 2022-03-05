@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CHECKER</title>
+
+   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+   <link rel="stylesheet" href="style.css">
+
+   <style>
+
+@media (max-width: 1000px) {
+   .header-top {
+      display: none;
+   }
+
+   .burger {
+      display: block;
+      padding: 0 20px;
+   }
+
+   
+   .category-box,
+   .dish-cart {
+      width: 100%;
+   }
+
+   .navbar {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      padding: 50px;
+      flex-direction: column;
+      background-color: black;
+      z-index: 10;
+      transform: translateX(100%);
+   }
+
+   .navbar a {
+      padding: 20px;
+   }
+
+   .active {
+      transform: translateX(0);
+   }
+
+   .navbar i {
+      color:white;
+      font-size: 3rem;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+   }
+
+   .dish-details-text {
+      width: 100%;
+   }
+
+   .chefs-body {
+      grid-template-columns: 1fr;
+   }
+}
+   </style>
+</head>
+<body>
+
+   <!-- ! HEADER -->
+   <header>
+      <div class="header-top">
+
+         <div class="left">
+            <a href="#"><i class='bx bxs-phone'></i>+7 985 698 36 25</a>
+            <a href="#"><i class='bx bxl-telegram'></i>checker@mail.com</a>
+         </div>
+
+         <div class="right">
+
+            <div class="social">
+               <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+               <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+               <a href="#"><i class='bx bxl-twitter' ></i></a>
+            </div>
+
+            <div class="sign">
+            <a href="#">Войти</a>
+            <a href="#">Зарегистрироваться</a>
+         </div>
+         </div>
+
+
+      </div>
+
+      <div class="header-bottom">
+
+         <div class="logo">
+            <img src="img/logo.png" alt="">
+         </div>         
+      
+
+      <nav class="navbar">
+         <i class='bx bx-x close'></i>
+         <a href="index.html">Главная</a>
+         <a href="index.html#category">Категории</a>
+         <a href="#">Меню</a>
+         <a href="index.html#reserve">Резерв стола</a>
+      </nav>
+
+      <div class="burger">
+         <a href="#"><i class='bx bx-menu'></i></a>
+      </div>
+
+      
+   </div>
+
+   </header>
+
+
+   <!-- ! DISHES -->
+   <section class="dishes">
+
+      <div class="heading">
+         <h2>Каталог</h2>
+      </div>
+
+         <div class="dishes-inner">
+         
+            
+            <div onclick="window.location.href='becon.html';" class="dish-cart">
+            <img src="img/new-1.jpg" alt="">
+            <h3>Рулеты из бекона</h3>
+            <p>Закуски</p>
+            <span>258 р.</span>
+         </div>
+      
+
+         <div class="dish-cart">
+            <img src="img/new-2.jpg" alt="">
+            <h3>Стейк Нью-Йорк</h3>
+            <p>Мясные блюда</p>
+            <span>1000 р.</span>
+         </div>
+
+         <div class="dish-cart">
+            <img src="img/new-3.jpg" alt="">
+            <h3>Суши</h3>
+            <p>Рыбные блюда</p>
+            <span>300 р.</span>
+         </div>
+
+         <div class="dish-cart">
+            <img src="img/new-4.jpg" alt="">
+            <h3>Рулеты из бекона</h3>
+            <p>Закуски</p>
+            <span>600 р.</span>
+         </div>
+
+         <div class="dish-cart">
+            <img src="img/new-1.jpg" alt="">
+            <h3>Рулеты из бекона</h3>
+            <p>Закуски</p>
+            <span>258 р.</span>
+         </div>
+
+         <div class="dish-cart">
+            <img src="img/new-2.jpg" alt="">
+            <h3>Стейк Нью-Йорк</h3>
+            <p>Мясные блюда</p>
+            <span>1000 р.</span>
+         </div>
+
+         <div class="dish-cart">
+            <img src="img/new-3.jpg" alt="">
+            <h3>Суши</h3>
+            <p>Рыбные блюда</p>
+            <span>300 р.</span>
+         </div>
+
+         <div class="dish-cart">
+            <img src="img/new-4.jpg" alt="">
+            <h3>Рулеты из бекона</h3>
+            <p>Закуски</p>
+            <span>600 р.</span>
+         </div>
+
+         </div>
+
+         <div class="pagination">
+            <a href=""><i class='bx bx-chevrons-left'></i></a>
+            <a href="">1</i></a>
+            <a href="">2</i></a>
+            <a href="">3</i></a>
+            <a href=""><i class='bx bx-chevrons-right'></i></a>
+         </div>
+   </section>
+   
+   <script src="main.js"></script>
+</body>
+</html>

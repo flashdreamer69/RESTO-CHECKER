@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+   --bg-color-orange: orange;
+   --bg-color-black: black;
+   --text-orange: orange;
+   --text-dark: black;
+   --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   --green-color: rgb(75, 172, 75);
+   --brown-color: rgb(129, 6, 6);
+}
+
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Lato', sans-serif;
+   outline: none;
+   border: none;
+   text-decoration: none;
+   list-style: none;
+   transition: all .2s linear;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+}
+
+img {
+   max-width: 100%;
+}
+
+section {
+   padding: 5rem 10%;
+}
+
+html::-webkit-scrollbar {
+   width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+   background-color: #e5e5e5;
+}
+
+html::-webkit-scrollbar-thumb {
+   background-color: var(--bg-color-black);
+}
+
+/* =============================== HEADER ========================== */
+
+header {
+   width: 100%;
+}
+.header-top {
+   padding: 5px 100px;
+   background-color: var(--bg-color-orange);
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.left a {
+   margin-right: 10px;
+}
+
+.right {
+   display: flex;
+}
+
+.social {
+   display: flex;
+}
+
+.social a {
+   margin-right: 10px;
+}
+
+.social a i {
+   font-size: 1.5rem;
+   color:var(--text-dark);
+}
+
+.sign a {
+   margin-right: 10px;
+   color: var(--text-dark);
+}
+
+.logo img {
+   width: 100px;
+}
+
+.header-bottom {
+   background-color: var(--bg-color-black);
+   padding: 10px 50px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 2px solid grey;
+}
+
+.burger {
+   display: none;
+}
+
+.burger a i {
+   font-size: 2.5rem;
+   color: white;
+}
+
+.burger a {
+   cursor: pointer;
+}
+
+.navbar {
+   display: flex;
+   margin-left: auto;
+}
+
+.navbar a {
+   color:var(--text-orange);
+   font-weight: 700;
+   font-size: 1.5rem;
+   margin: 0 10px;
+}
+
+.navbar a:hover {
+   color: white;
+}
+
+/* =============================== HOME ========================== */
+
+.home {
+   position: relative;
+   min-height: 900px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.home-img {
+   position: absolute;
+   filter: brightness(80%);
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   object-fit: cover;
+   
+}
+
+.home-text h1 {
+   color:white;
+   font-size: 4rem;
+}
+
+.home-text h1 span {
+   color: red;
+}
+
+.home-text p {
+   margin: 25px 0 60px;
+   color: white;
+   font-size: 2rem;
+}
+
+.btn {
+   background-color: var(--bg-color-orange);
+   color: white;
+   padding: 10px 20px;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+/* =============================== CATEGORY ========================== */
+
+.heading {
+   text-align: center;
+   margin-bottom: 4rem;
+}
+
+.category .heading h2 {
+   font-size: 2rem;
+   color:var(--text-dark);
+   margin-bottom: 30px;
+}
+
+.category .heading p {
+   font-size: 1.5rem;
+}
+
+
+.category-inner {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.category-box {
+   width: 48%;
+   margin-bottom: 40px;
+   padding: 10px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
+
+.category-img {
+   width: 100%;
+   height: 400px;
+   overflow: hidden;
+   border-radius: 10px;
+}
+
+.category-img img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.category-content {
+   background-color: var(--bg-color-orange);
+   padding: 20px 30px;
+   margin-top: -60px;
+   opacity: 0.8;
+}
+
+
+.category-content h3 {
+   margin-bottom: 1rem;
+}
+
+.category-content p {
+   line-height: 1.5;
+   margin: 20px 0;
+}
+
+.category-content a {
+   color:blue;
+   font-size: 1.5rem;
+}
+
+.category-content i {
+   font-size: 2rem;
+   vertical-align: middle;
+   margin-right: 10px;
+}
+
+
+/* =============================== DISHES ========================== */
+.dishes {
+   background-color: var(--bg-color-black);
+   text-align: center;
+}
+
+.dishes .heading {
+   color: var(--text-orange);
+   font-weight: 700;
+   font-size: 1.8rem;
+}
+
+.dishes-inner {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.dish-cart {
+   width: 22%;
+   color: white;
+   border: 3px solid grey;
+   padding: 10px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 40px;
+   cursor: pointer;
+}
+
+.dish-cart:hover {
+   transform: scale(0.9);
+}
+
+.dish-cart img {
+   width: 100%;
+   height: 400px;
+   object-fit: cover;
+   object-position: center;
+   margin-bottom: 10px;
+}
+
+.dish-cart h3 {
+   color: var(--text-orange);
+   margin-bottom: 5px;
+}
+
+.dish-cart p {
+   margin-bottom: 20px;
+
+}
+
+.dish-cart span {
+   display: block;
+   font-weight: 700;
+   font-size: 1.3rem;
+}
+
+.dishes .btn {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.dishes .btn:hover {
+   background-color: cornflowerblue;
+}
+
+.dishes .btn i {
+   margin-right: 10px;
+   font-size: 1.5rem;
+}
+
+
+.pagination {
+   margin-top: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.pagination a {
+   margin: 0 20px;
+   background-color: var(--bg-color-orange);
+   padding: 10px;
+   color: var(--text-dark);
+   font-size: 1.5rem;
+   text-align: center;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination a:hover {
+   background-color: cadetblue;
+}
+
+
+/* =============================== CHEFS ========================== */
+.chefs-body {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2rem;
+}
+
+.chef-img {
+   position: relative;
+   overflow: hidden;
+   padding: 0 0 80% 0;
+}
+
+.chef-img img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom 60%;
+   
+}
+
+.chef-view {
+   display: block;
+}
+
+.chef-text {
+   padding: 10px;
+}
+
+.chef-text span {
+   display: block;
+   margin: 10px 0;
+   font-size: 1.5rem;
+   color:var(--text-dark)
+}
+
+.chef-box {
+   position: relative;
+}
+
+.chef-box:hover .chef-over {
+   background-color: rgba(192, 48, 28, 0.7);
+}
+
+.chef-box:hover .chef-over h4,
+.chef-box:hover .chef-over .social-chef {
+   opacity: 1;
+}
+
+
+.chef-over {
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   background-color: rgba(192, 48, 28, 0);
+}
+
+
+.chef-over h4 {
+   color: white;
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
+   opacity: 0;
+}
+
+
+.social-chef {
+   display: flex;
+   justify-content: center;
+   opacity: 0;
+}
+
+.social-chef a {
+   color: white;
+   font-size: 1.8rem;
+   margin: 0 10px;
+}
+
+/* =============================== SUBSCRIBE ========================== */
+
+.subscribe {
+   background:  linear-gradient(to bottom, black 0%, transparent 100%), url(img/subscribe.jpg) center no-repeat;
+   background-attachment: fixed;
+   height: 80vh;
+   background-size: cover;
+   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+   display: flex;
+   flex-direction:column;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+.subscribe .heading h2 {
+   margin: 0 auto;
+   max-width: 700px;
+   color: white;
+   font-weight: 700;
+   font-size: 3rem;
+}
+
+.form-control {
+   margin: 1rem 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.subscribe-input {
+   background-color: #f7f7f7;
+   width: 300px;
+   min-height: 50px;
+   padding: 10px;
+   color: var(--text-dark);
+   font-size: 1rem;
+   margin: 20px;
+}
+
+.form-control .btn {
+   border-radius: 5px;
+   min-height: 50px;
+   font-weight: 700;
+   color:var(--text-dark);
+   text-transform: uppercase;
+   cursor: pointer;
+}
+
+.btn-h {
+   color: #fff;
+   cursor: pointer;
+   display: block;
+   position: relative;
+   border: 2px solid #F7CA18;
+   transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+   }
+   .btn-h:hover {
+   color: #000 !important;
+   background-color: transparent;
+   text-shadow: nfour;
+   }
+   .btn-h:hover:before {
+   right: 0%;
+   left: auto;
+   width: 100%;
+   }
+   .btn-h:before {
+   display: block;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   height: 100%;
+   width: 0px;
+   z-index: -1;
+   content: '';
+   color: #000 !important;
+   background: #F7CA18;
+   transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+   }
+
+
+
+/* =============================== RESERVE ========================== */
+.reserve {
+   background: url(img/reserve.jpg) center no-repeat;
+   background-size: cover;
+   min-height: 500px;
+}
+
+.reserve-block {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   max-width: 700px;
+   background-color: rgb(120, 14, 156, 0.7);
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.reserve-block h2 {
+   text-align: center;
+   color: white;
+}
+
+.reserve-form {
+   margin: 2rem 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.reserve-form input {
+   width: calc(50% - 10px);
+   margin-bottom: 15px;
+   background-color: #e5e5e5;
+   height: 40px;
+   padding: 10px;
+   font-size: 1rem;
+   color: var(--text-dark);
+   border: 1px solid transparent;
+   border-radius: 5px;
+}
+
+.reserve-form input::placeholder {
+   font-size: 1rem;
+   color:var(--text-dark);
+}
+
+.reserve-select {
+   width: calc(50% - 10px);
+   margin-bottom: 15px;
+}
+
+.reserve-select select {
+   width: 100%;
+   border-radius: 5px;
+   height: 40px;
+   background-color: #e5e5e5;
+   padding: 10px;
+   font-size: 1rem;
+   color: var(--text-dark);
+   outline: none;
+   border: 1px solid transparent;
+}
+
+.reserve-form .btn {
+   width: 100%;
+   color: white;
+   text-transform: uppercase;
+   font-weight: 700;
+   font-size: 1rem;
+   cursor: pointer;
+   box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+   -webkit-transition: all 150ms ease-in-out;
+   transition: all 150ms ease-in-out;
+}
+
+.reserve-form .btn:hover {
+   box-shadow: 0 0 20px 0 #3498db inset, 0 0 0px 4px #3498db;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------       MEDIA         ---------------------------------------------------------------------- */
+
+
+
+@media (max-width: 1000px) {
+   .header-top {
+      display: none;
+   }
+
+   .burger {
+      display: block;
+      padding: 0 20px;
+   }
+ 
+   .category-box,
+   .dish-cart {
+      width: 100%;
+   }
+
+   .navbar {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      padding: 50px;
+      flex-direction: column;
+      background-color: black;
+      z-index: 10;
+      transform: translateX(100%);
+   }
+
+   .navbar a {
+      padding: 20px;
+   }
+
+   .active {
+      transform: translateX(0);
+   }
+
+   .navbar i {
+      color:white;
+      font-size: 3rem;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+   }
+
+   .dish-details-text {
+      width: 100%;
+   }
+
+   .chefs-body {
+      grid-template-columns: 1fr;
+   }
+}
+
+@media (max-width: 600px) {
+   .home-text h1 {
+      font-size: 3rem;
+}
+
+.home-text p {
+   font-size: 1.5rem;
+}
+
+.dishes .btn i {
+   font-size: 1.2rem;
+}
+
+.subscribe .heading h2 {
+   font-size: 2rem;
+}
+
+.subscribe-input {
+   width: 250px;
+}
+
+.reserve-form input {
+   width: calc(100% - 10px);
+}
+
+.reserve-select {
+   width: calc(100% - 10px);
+}
+
+.category-content a {
+   font-size: 1rem;
+}
+
+}
+
+@media (max-width: 500px) {
+
+   .pagination a {
+      font-size: 1rem;
+      margin: 0 10px;
+   }
+}
